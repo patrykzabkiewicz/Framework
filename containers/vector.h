@@ -28,10 +28,13 @@ public:
     
     int pop_back() {
         size--;
+        
     }
     
     const =operator();
-    const T []operator(const int index) const;
+    const T []operator(const int index) const {
+        
+    }
     const []operator(T newValue) const;
     const ()operator() const;
 }
