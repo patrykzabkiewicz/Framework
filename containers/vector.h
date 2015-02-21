@@ -1,9 +1,23 @@
+//
+//	Author: Patrick Zabkiewicz
+//  Date:   26.01.2015
+//
+//
+//
+//  Reimplementation of the vector
+//
+//
+
+
 #ifndef VECTOR_H
 #define VECTOR_H
+
+
 
 template <class T>
 class VECTOR {
 
+private:
     int capacity;
     int size;
     T v[4];
