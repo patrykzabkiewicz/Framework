@@ -1,6 +1,7 @@
 /**
  *
- * Implementation fo the vector
+ * Smart implementation fo the vector with dynamic adding
+ * of required space. Using linked vectors.
  *
  * Author: Patryk Zabkiewicz, April 2015
  *
@@ -39,23 +40,13 @@ T pop_back(vector *v) {
 
 template <typename T>
 void push_back(vector *v, T nobj) {
-
-	int tmp_capacity;
-
 	v->size++;
-	if( v->size == v->capacity) {
-		tmp_capacity = v->capacity;
+	if( v->size == v->capacity)
+	{
 		v->capacity += VECT_SPC;
-		T *nspace = new T[v->capacity];
-
-		for(int i=0; i < tmp_capacity; i++) {
-			nspace[i] = v->obj[i];
-		}
-		delete v->obj;
-		v->obj = nspace;
+		T *nspace = new T[v->capacity];	
 	}
-	else {
-		v->obj[v->size] = nobj;
-	}
+	else
+	v->obj[v->size] = nobj;
 }
 

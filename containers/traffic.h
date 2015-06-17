@@ -1,0 +1,3 @@
+namespace TRAFFIC {
+	void init();
+}

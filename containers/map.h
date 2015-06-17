@@ -1,0 +1,3 @@
+namespace MAP {
+	void init();
+}
