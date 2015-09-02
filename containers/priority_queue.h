@@ -1,11 +1,11 @@
 /**
  *
- * Queue implementation using templates
+ * Priority queue implementation using templates
  * Author : Patryk Zabkiewicz
  *
 */
 
-namespace pza {
+namespace dfrm {
 
 template <typename T>
 struct elem {

@@ -1,3 +1,14 @@
+//
+//  Author: Patryk Ząbkiewicz
+//
+//  Date:   21.02.2015
+//
+//
+//  basic types definitions
+//
+//
+
+
 #ifndef COMMON_H
 #define COMMON_H
 
@@ -11,6 +22,8 @@
 
 #define unsigned long uint64
 #define long int64
+
+#define double double32
 
 #endif
 
